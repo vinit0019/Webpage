@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Webpage - 31</title>
+
+    <!-- DATA AOS CSS CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+    <!-- DATA AOS CSS CDN -->
+
+    <!-- googal font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Kelly+Slab&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Rose:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <!-- googal font CDN -->
+
+      <!-- flikity CSS CDN -->
+      <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+      <!-- flikity CSS CDN -->
+
+      <!-- animated CSS CDN -->
+      <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+      <!-- animated CSS CDN -->
+
+    <!-- font awsome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font awsome CDN -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      * {
+        font-family: "Outfit", serif;
+      }
+      #shadow{
+        transition: 0.6s;
+      }
+      #shadow:hover{
+        box-shadow: rgb(121, 123, 122) 0px 8px 166px, rgba(17, 17, 26, 1) 0px 16px 56px, rgba(17, 17, 26, 1) 0px 24px 80px;
+      }
+
+      /* .carousel {
+  background: transparent;
+}
+
+.carousel-cell {
+  width: 46%;
+  height: 200px;
+  margin-right: 10px;
+  background: transparent;
+  border-radius: 5px;
+  border: 2px solid rgb(50,51,56);
+  counter-increment: gallery-cell;
+}
+
+/* cell number */
+/* .carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: rgb(255, 255, 255); 
+} */
+
+    </style>
+  </head>
+  <body>
+    <!-- navbar section start -->
+    <div class="navbar w-[100%] h-[60px] flex justify-between items-center border-b-[1px] z-[5] fixed border-[rgb(32,32,32)] lx:px-[8vw] px-[3vw] backdrop-blur-[23px] text-[white]">
+
+      <div class="left w-[10%]">
+        <h3 class="text-[30px] font-medium">snooze.</h3>
+      </div>
+
+      <div class="center lg:flex justify-end gap-[8%] hidden text-[15px] w-[40%]">
+        <a href="#" class="font-light">Features</a>
+        <a href="#" class="font-light"> Solutions</a>
+        <a href="#" class="font-light">What they said</a>
+        <a href="#" class="font-light">Pricing</a>
+        <div>
+        </div>
+      </div>
+
+      <div class="right w-[22%] flex items-center justify-end gap-[3%]">
+        <i class="fa-solid fa-list flex lg:hidden text-[25px]"></i> 
+      <button class="w-[auto] h-[45px] items-center border-[1px] px-[2vw] text-[15px] duration-[0.6s] hover:bg-[#3c3c3c] rounded-[10px] border-[rgb(65,95,140)] hidden md:flex ">Buy Template</button>
+    </div>
+    </div>
+      <!-- navbar section end -->
+
+    <!-- main1 section start -->
+     <div class="main1 flex flex-col items-center pt-[60px] overflow-hidden text-[white] w-[100% h-[auto] bg-[black]">
+        <img data-aos="flip-right"
+        data-aos-duration="2000" class="w-[80px] h-[85px] mt-[40px]" src="./Assets/webpage31.1.avif" alt="LOGO">
+        <h1 data-aos="flip-up"
+        data-aos-duration="2000" class="md:text-[60px] sm:text-[40px] text-[30px] text-center mt-[20px] font-medium " style="line-height: 130%;">Wake Up Refreshed Every <br> Morning With Snooze</h1>
+
+        <p data-aos="fade-up"
+        data-aos-duration="3000" class="text-center md:text-[18px] sm:text-[12px] text-[10px]   text-[rgb(204,204,205)] mt-[15px] ">Discover the ultimate sleep companion. With personalized <br> insights, soothing sounds, and smart alarms.</p>
+
+     <div data-aos="fade-up"
+     data-aos-duration="3000" class="flex gap-[20px] w-[350px] h-[auto] mt-[40px]">
+            <button class="w-[165px] flex justify-between h-[45px] items-center border-[1px] px-[20px] duration-[0.6s] hover:bg-[#3c3c3c] rounded-[10px] border-[rgb(65,95,140)] md:flex font-medium text-[16px]">Watch Video
+                <img src="./Assets/webpage31.2.svg"></button>
+    
+            <button class="w-[155px] flex justify-center h-[45px] items-center border-[1px] bg-[rgb(44,81,171)] px-[20px] duration-[0.6s] hover:bg-[#3c3c3c] rounded-[10px] border-[rgb(65,95,140)] md:flex font-light text-[16px]">Download App
+            </button>
+        </div>
+            <div data-aos="fade-up"
+            data-aos-duration="3000" class="w-[310px] h-[400px]  sm:w-[405px] ml-[100px] sm:h-[500px] lg:w-[535px]  lg:h-[670px] shadow-[#000000_0_-15px_15px_0px_inset] mt-[50px] z-[-0]" style="background-image: url(./Assets/webpage31.3-2.png); background-position: center; background-size: cover;">
+                
+                <img class="w-[142px] ml-[38px] h-[310px]  sm:w-[180px] sm:h-[390px]  sm:ml-[55px] lg:w-[240px] lg:ml-[72px] lg:h-[528px] lg:mt-[15px] rounded-[25px] mt-[12px] " style="-webkit-box-shadow: 1px 5px 208px 200px rgba(44,81,171.28);
+                -moz-box-shadow: 1px 5px 208px 200px rgba(44,81,171,0.28);
+                box-shadow: 1px 5px 208px 200px rgba(44,81,171,0.28);" src="./Assets/webpage31.4.avif" alt="">
+            </div>
+    
+    </div>
+    <!-- main1 section end -->
+
+        <!-- main2 section start -->
+         <div class="main2 w-[100%] h-[auto] pb-[90px] bg-[black] pt-[150px]">
+            <div class="row grid grid-cols-5 mx-[7vw] gap-[30px]">
+                <div data-aos="fade-up"
+                data-aos-duration="3000" class="col-span-5 lg:col-span-2 pt-[5%] pb-[0%] px-[8%] overflow-hidden w-[100%] h-[735px] rounded-[25px] bg-[rgb(63,103,186)]">
+                    <h1 class="text-[25px] font-normal text-[white] mt-[5px]">Set your alarm and track your sleep</h1>
+                    <p class="mt-[5px] text-[rgb(210,220,241)] font-light">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Mauris id nunc odio.</p>
+                    <div class="w-[100%] mt-[30px] h-[600px]">
+                        <img src="./Assets/Screenshot 2024-12-26 113653.png" class="w-full h-full">
+                    </div>
+                    </div>
+                
+                <div data-aos="fade-up"
+                data-aos-duration="3000" class="col-span-5 lg:col-span-3 p-[5%] w-[100%] overflow-hidden h-[735px] rounded-[25px] border-[1px] border-[rgb(50,50,50)]">
+                    <h1 class="text-[25px] font-normal text-[white] mt-[5px]">See Snooze in Action</h1>
+                    <p class="mt-[5px] text-[rgb(210,220,241)] font-light">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Mauris id nunc odio.</p>
+                    <div id="shadow" class="w-[100%] mt-[30px] h-[545px] flex justify-center items-center rounded-[20px] " style="background-image: url(./Assets/webpage31.7.avif); background-position: center; background-size: cover;">
+                       <div class="w-[100%] rounded-[40px]  flex justify-center items-center h-[100%] bg-[#00000061]">
+
+                        <div class="w-[100px] flex justify-center items-center h-[100px] duration-[0.6s] hover:scale-[1.3]" style="background-image: url(./Assets/webpage31.8.svg); background-position: center; background-size: cover; ">
+                          <img class="w-[60px] h-[70px] mt-[20px]" src="./Assets/webpage31.9.png">
+                        </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+            <h1 data-aos="flip-up"
+            data-aos-duration="2000" class="text-[white] sm:text-[40px] text-[30px] text-center mt-[70px] font-medium " style="line-height: 130%;">Our sponsor & partners</h1>
+          <div class="w-[100%] h-auto px-[10vw] mt-[30px] gap-[4vw] flex justify-center flex-wrap">
+                <div class="logo1">
+                  <img class="w-[140px] h-[50px]" src="./Assets/webpage31.10.svg" alt="">
+                </div>
+                <div class="logo2">
+                  <img class="w-[140px] h-[50px]" src="./Assets/webpage31.11.svg" alt="">
+                </div>
+                <div class="logo3">
+                  <img class="w-[140px] h-[50px]" src="./Assets/webpage31.12.svg" alt="">
+                </div>
+                <div class="logo4">
+                  <img class="w-[140px] h-[50px]" src="./Assets/webpage31.13.svg" alt="">
+                </div>
+                <div class="logo5">
+                  <img class="w-[140px] h-[50px]" src="./Assets/webpage31.14.svg" alt="">
+                </div>
+            </div>
+            <div class="w-[100%] h-[2px] mt-[90px]" style="background: rgb(0,0,0);
+            background: linear-gradient(90deg, rgba(0,0,0,1) 7%, rgba(122,124,189,1) 35%, rgba(165,168,255,1) 50%, rgba(115,118,179,1) 65%, rgba(0,0,0,1) 93%);">
+            </div>
+        </div>
+        <!-- main2 section end -->
+
+        <!-- main3 section start -->
+         <div class="main3 w-[100%] h-[auto] bg-[black]">
+          <h1 data-aos="flip-up"
+        data-aos-duration="2000" class="sm:text-[40px] text-[white] text-[30px] text-center pt-[20px] font-medium " style="line-height: 130%;">Your Perfect Sleep, One Feature at a Time</h1>
+
+        <p data-aos="fade-up"
+        data-aos-duration="3000" class="text-center md:text-[16px] sm:text-[12px] text-[10px]   text-[rgb(204,204,205)] mt-[15px] ">Snooze is packed with powerful features designed to transform your <br> sleep experience. From calming soundscapes to smart analytics</p>     
+
+         <div class="w-[100%]  h-auto pt-[60px] px-[7vw]  ">  
+         <div class="row text-[white] mb-[200px] lg:mb-[0px] grid grid-cols-1 lg:grid-cols-3 gap-[3%] w-[100%] h-[auto]">
+          <div data-aos="fade-up"
+          data-aos-duration="3000" class="box1 w-[100%] h-[auto] pb-[40px] flex flex-col items-center rounded-[15px] border-[1px] border-[rgb(35,35,35)]">
+            <div class="w-[60px] h-[60px] rounded-[10px] mt-[35px] flex justify-center items-center bg-[rgb(56,91,179)]">
+              <img class="w-[40px] h-[30px]" src="./Assets/webpage31.15.png" >
+            </div>
+            <h1 class="text-[20px] mt-[10px] text-center">Supported by macbooks</h1>
+            <p class="text-center mt-[10px] text-[rgb(204,204,205)] font-light">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Maecenas massa massa.</p>
+          </div>
+          <div data-aos="fade-up"
+          data-aos-duration="3000" class="box2 w-[100%] h-[auto] pb-[40px] flex flex-col items-center rounded-[15px] border-[1px] border-[rgb(35,35,35)]">
+            <div class="w-[60px] h-[60px] rounded-[10px] mt-[35px] flex justify-center items-center bg-[rgb(56,91,179)]">
+              <img class="w-[30px] h-[30px]" src="./Assets/webpage31.16.png" >
+            </div>
+            <h1 class="text-[20px] mt-[10px] text-center">Learning as you go</h1>
+            <p class="text-center mt-[10px] text-[rgb(204,204,205)] font-light">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Maecenas massa massa.     </p>
+          </div>
+          <div data-aos="fade-up"
+          data-aos-duration="3000" class="box3 w-[100%] h-[auto] pb-[40px] flex flex-col items-center rounded-[15px] border-[1px] border-[rgb(35,35,35)]">
+            <div class="w-[60px] h-[60px] rounded-[10px] mt-[35px] flex justify-center items-center bg-[rgb(56,91,179)]">
+              <img class="w-[30px] h-[30px]" src="./Assets/webpage31.17.png" >
+            </div>
+            <h1 class="text-[20px] mt-[10px] text-center">24/7 support</h1>
+            <p class="text-center mt-[10px] text-[rgb(204,204,205)] font-light">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Maecenas massa massa.</p>
+          </div>
+          <div data-aos="fade-up"
+          data-aos-duration="3000" class="box4 w-[100%] h-[auto] pb-[40px] flex flex-col items-center rounded-[15px] border-[1px] border-[rgb(35,35,35)]">
+            <div class="w-[60px] h-[60px] rounded-[10px] mt-[35px] flex justify-center items-center bg-[rgb(56,91,179)]">
+              <img class="w-[30px] h-[30px]" src="./Assets/webpage31.18.png" >
+            </div>
+            <h1 class="text-[20px] mt-[10px] text-center">Always on time</h1>
+            <p class="text-center mt-[10px] text-[rgb(204,204,205)] font-light">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Maecenas massa massa.</p>
+          </div>
+          <div data-aos="fade-up"
+          data-aos-duration="3000" class="box5 w-[100%] h-[auto] pb-[40px] flex flex-col items-center rounded-[15px] border-[1px] border-[rgb(35,35,35)]">
+            <div class="w-[60px] h-[60px] rounded-[10px] mt-[35px] flex justify-center items-center bg-[rgb(56,91,179)]">
+              <img class="w-[30px] h-[30px]" src="./Assets/webpage31.19.png" >
+            </div>
+            <h1 class="text-[20px] mt-[10px] text-center">Secure data</h1>
+            <p class="text-center mt-[10px] text-[rgb(204,204,205)] font-light">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Maecenas massa massa.</p>
+          </div>
+
+          <div data-aos="fade-up"
+          data-aos-duration="3000" class="box6 w-[100%] h-[auto] pb-[40px] mb-[10px] flex flex-col items-center rounded-[15px] border-[1px] border-[rgb(35,35,35)]">
+            <div class="w-[60px] h-[60px] rounded-[10px] mt-[35px] flex justify-center items-center bg-[rgb(56,91,179)]">
+              <img class="w-[30px] h-[30px]" src="./Assets/webpage31.20.png" >
+            </div>
+            <h1 class="text-[20px] mt-[10px] text-center">Always saved</h1>
+            <p class="text-center mt-[10px] text-[rgb(204,204,205)] font-light">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Maecenas massa massa.</p>
+          </div>
+        
+         </div>
+        </div> 
+        <div class="w-[100%] h-[2px] mt-[70px]" style="background: rgb(0,0,0);
+            background: linear-gradient(90deg, rgba(0,0,0,1) 7%, rgba(122,124,189,1) 35%, rgba(165,168,255,1) 50%, rgba(115,118,179,1) 65%, rgba(0,0,0,1) 93%);">
+            </div>         
+        </div>
+        <!-- main3 section end -->
+
+        <!-- main4 section start -->
+         <div class="mai4 w-[100%] h-[auto] bg-[black]">
+          <h1 data-aos="flip-up"
+        data-aos-duration="2000" class="sm:text-[40px] text-[white] text-[30px] text-center pt-[20px] font-medium " style="line-height: 130%;">Sleep Smarter with These Features</h1>
+
+        <p data-aos="fade-up"
+          data-aos-duration="3000" class="text-center md:text-[16px] sm:text-[12px] text-[10px]   text-[rgb(204,204,205)] mt-[15px] ">Each tool is crafted to help you relax, recharge, and wake up feeling <br> refreshed. Explore the key benefits that make your sleep better</p>
+
+        <div class="w-[100%] h-[auto] px-[11vw] mt-[120px]">
+          <div class="row grid grid-cols-1 lg:grid-cols-2 gap-[10vw] ">
+
+            <div data-aos="flip-left"
+            data-aos-duration="2500" class="w-[100%] h-[650px] grid-cols-1 rounded-[20px]" style="background-image: url(./Assets/webpage31.21.avif); background-position: center; background-size: cover; box-shadow: rgb(94, 124, 180) 0px 16px 136px, rgba(17, 17, 26, 1) 0px 16px 56px, rgba(17, 17, 26, 1) 0px 24px 80px;">          
+            </div>
+
+            <div class="text-[white] flex flex-col items-start justify-center w-[100%] h-[auto] pt-[50px] lg:pt-[0px] grid-cols-1 ">
+              <div data-aos="fade-up"
+              data-aos-duration="3000" class="flex items-center gap-[15px]">
+                <img class="w-[35px] h-[35px] rounded-[10px] px-[5px] bg-[white]" src="./Assets/webpage31.23.svg" alt="">
+                <h1 class="text-[20px]" >Anything, Anytime</h1>
+              </div>
+              <h1 data-aos="fade-up"
+              data-aos-duration="3000" class="sm:text-[40px] text-[white] text-[30px] pt-[20px] font-medium " style="line-height: 130%;">Soothing Nature <br> Sounds with us
+              </h1>
+        <p data-aos="fade-up"
+        data-aos-duration="3000" class=" md:text-[16px] sm:text-[12px] text-[10px]   text-[rgb(204,204,205)] mt-[25px] ">Immerse yourself in the serene sounds of nature. Whether it's the gentle patter of rain, the soft hush of snow, or the rhythmic roar of a typhoon, these calming soundscapes create the perfect environment for peaceful sleep.</p> 
+        <button data-aos="fade-up"
+        data-aos-duration="3000" class="w-[auto] mt-[40px] flex justify-center h-[45px] items-center border-[1px] bg-[rgb(44,81,171)] px-[20px] duration-[0.6s] hover:bg-[#3c3c3c] rounded-[10px] border-[rgb(65,95,140)] md:flex font-light text-[16px]">Get early access</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-[100%] h-[2px] mt-[70px] lg:hidden" style="background: rgb(0,0,0);
+        background: linear-gradient(90deg, rgba(0,0,0,1) 7%, rgba(122,124,189,1) 35%, rgba(165,168,255,1) 50%, rgba(115,118,179,1) 65%, rgba(0,0,0,1) 93%);">
+        </div> 
+
+        <div class="w-[100%] h-[auto] px-[11vw] mt-[160px]">
+          <div class="row grid grid-cols-1 lg:grid-cols-2 gap-[10vw]  mt-[-100px] lg:mt-[0px]">
+
+            <div class="text-[white] flex flex-col items-start justify-center w-[100%] h-[auto] pt-[50px] lg:pt-[0px] grid-cols-1 ">
+              <div data-aos="fade-up"
+              data-aos-duration="3000" class="flex items-center gap-[15px]">
+                <img class="w-[35px] h-[35px] rounded-[10px] px-[5px] bg-[white]" src="./Assets/webpage31.24.svg" alt="">
+                <h1 class="text-[20px]" >Boost</h1>
+              </div>
+              <h1 data-aos="fade-up"
+              data-aos-duration="3000" class="sm:text-[40px] text-[white] text-[30px] pt-[20px] font-medium " style="line-height: 130%;">Sleep with Your <br> Favorite Tunes
+              </h1>
+        <p data-aos="fade-up"
+        data-aos-duration="3000" class=" md:text-[16px] sm:text-[12px] text-[10px]   text-[rgb(204,204,205)] mt-[25px] ">Drift off to the music you love. Snooze lets you curate your bedtime playlist, blending melodies with relaxation for a personalized and enjoyable sleep experience</p> 
+        <button data-aos="fade-up"
+        data-aos-duration="3000" class="w-[auto] mt-[40px] flex justify-center h-[45px] items-center border-[1px] bg-[rgb(44,81,171)] px-[20px] duration-[1s] hover:bg-[#3c3c3c] rounded-[10px] border-[rgb(65,95,140)] md:flex font-light text-[16px]">Get early access</button>
+
+            </div>
+
+            <div data-aos="flip-right"
+            data-aos-duration="2500" class="w-[100%] h-[650px] grid-cols-1 rounded-[20px]" style="background-image: url(./Assets/webpage31.25.avif); background-position: center; background-size: cover; box-shadow: rgb(94, 124, 180) 0px 16px 136px, rgba(17, 17, 26, 1) 0px 16px 56px, rgba(17, 17, 26, 1) 0px 24px 80px;">          
+            </div>
+          </div>
+        </div>
+
+         </div>
+        <!-- main4 section end -->
+
+         <!-- main5 section start -->
+          <div class="main5 w-[100%] flex flex-col items-center pt-[200px] mt-[-100px] h-[auto] bg-[black]">
+
+              <!-- <div class="w-[100%] h-[2px]  mt-[80px] " style="background: rgb(0,0,0);
+              background: linear-gradient(90deg, rgba(0,0,0,1) 7%, rgba(122,124,189,1) 35%, rgba(165,168,255,1) 50%, rgba(115,118,179,1) 65%, rgba(0,0,0,1) 93%);">
+              </div>  -->
+
+              <h1 data-aos="fade-up"
+              data-aos-duration="3000" class="sm:text-[40px] text-[white] taxt-center text-[30px] pt-[20px] font-medium " style="line-height: 130%;"> Hear what our users have to say</h1>
+        <p data-aos="fade-up"
+        data-aos-duration="3000" class=" md:text-[16px] sm:text-[12px] text-center text-[10px] mb-[]  text-[rgb(204,204,205)] mt-[25px] ">Say goodbye to the stress of disorganization and hello to a more <br> focused, efficient, and successful you</p> 
+
+                    <!-- <div class="carousel"
+            data-flickity='{ "freeScroll": true }'>
+            <div class="carousel-cell"></div>
+            <div class="carousel-cell"></div>
+            <div class="carousel-cell"></div>
+            <div class="carousel-cell"></div>
+            <div class="carousel-cell"></div>
+          </div> -->
+
+          <div class="w-[100%] h-[2px] mb-[70px] mt-[80px] " style="background: rgb(0,0,0);
+              background: linear-gradient(90deg, rgba(0,0,0,1) 7%, rgba(122,124,189,1) 35%, rgba(165,168,255,1) 50%, rgba(115,118,179,1) 65%, rgba(0,0,0,1) 93%);">
+              </div>
+        </div> 
+         <!-- main5 section end -->
+
+        <!-- main6 section start -->
+         <div class="main6 w-[100%] flex items-center flex-col h-[auto]  bg-[black]">
+          <h1 class="wow animate__animated animate__bounceInDown sm:text-[40px] text-[white] text-center text-[30px] pt-[20px] font-medium " style="line-height: 130%;"> Affordable Plans for Every Budget, <br> Choose Yours</h1>
+    <p  class="wow animate__animated animate__bounceInDown md:text-[16px] sm:text-[12px] text-center text-[10px] mb-[]  text-[rgb(204,204,205)] mt-[25px] ">Snooze offers a range of pricing plans to fit every budget and level of <br> need. Whether you're a solo professional, a small business.</p> 
+             <div class="text-[white] w-[100%] h-[auto] pb-[90px] bg-[black] pt-[100px]">
+          <div class="row grid grid-cols-2 lg:grid-cols-5 mx-[7vw] gap-[30px]">
+              <div data-aos="fade-up"
+              data-aos-duration="3000" class="col-span-5 lg:col-span-2 p-[60px] pt-[5%] pb-[0%] px-[8%] overflow-hidden w-[100%] h-[auto] rounded-[25px] border-[1px] border-[rgb(50,50,50)] ">
+                <h1 class="w-[85px] h-[40px] rounded-[25px] border-[1px] flex justify-center items-center font-extralight text-[18px]">BASIC</h1>
+                <h1 class="text-[40px] mt-[15px]">Professional plan</h1> 
+                <div class="line w-[100%] h-[1px] bg-[grey] mt-[50px]"></div>  
+                  <div class="w-[100%] h-[auto] flex flex-col gap-[20px] mt-[70px]">
+                    <i data-aos="fade-up"
+              data-aos-duration="3000" class="fa-solid fa-check text-[21px] me-[20px]">&nbsp;&nbsp;&nbsp;<span class="text-[20px] font-medium">Single user</span></i>
+                    <i data-aos="fade-up"
+              data-aos-duration="3000" class="fa-solid fa-check text-[21px] me-[20px]">&nbsp;&nbsp;&nbsp;<span class="text-[20px] font-medium">Limited features</span></i> 
+                    <i data-aos="fade-up"
+              data-aos-duration="3000" class="fa-solid fa-check text-[21px] me-[20px]">&nbsp;&nbsp;&nbsp;<span class="text-[20px] font-medium">Multiple users</span></i> 
+                    <i data-aos="fade-up"
+              data-aos-duration="3000" class="fa-solid fa-check text-[21px] me-[20px]">&nbsp;&nbsp;&nbsp;<span class="text-[20px] font-medium">Expanded features</span></i> 
+                    <i data-aos="fade-up"
+              data-aos-duration="3000" class="fa-solid fa-check text-[21px] me-[20px]">&nbsp;&nbsp;&nbsp;<span class="text-[20px] font-medium">Premium support</span></i> 
+                  </div>
+                  <div class="line w-[100%] h-[1px] bg-[grey] mt-[80px]"></div>
+
+                  <div class="w-[100%] flex justify-between items-center mt-[50px] h-[auto]">
+                    <h1 class="text-[25px] font-extralight">3.99$ <span class="text-[18px] text-[grey]">/ month</span></h1>
+                    <button data-aos="fade-up"
+                    data-aos-duration="3000" class="w-[auto]  flex justify-center h-[45px] items-center border-[1px] bg-[rgb(44,81,171)] px-[20px] duration-[1s] hover:bg-[#3c3c3c] rounded-[10px] border-[rgb(65,95,140)] md:flex font-light text-[16px]">Purchase</button>
+                  </div>
+          </div>
+              <div data-aos="fade-up"
+              data-aos-duration="3000" class="col-span-5 lg:col-span-3 p-[5%] w-[100%] overflow-hidden h-[auto] rounded-[25px] border-[1px] border-[rgb(50,50,50)]">    
+              <h1 class="w-[85px] h-[40px] rounded-[25px] border-[1px] flex justify-center items-center font-extralight text-[18px]">ULTRA</h1>
+                <h1 class="text-[40px] mt-[15px] ">Ultimate plan</h1> 
+                <div class="line w-[100%] h-[1px] bg-[grey] mt-[35px]"></div>  
+                  <div class="w-[100%] h-[auto] flex flex-col gap-[20px] mt-[70px]">
+                    <div class="row w-[100%]  h-[auto] gap-[5vw] grid grid-cols-1 lg:grid-cols-2 ">
+                      <div class="row  grid-cols-1  flex flex-col  gap-[7px] ">
+                        <i data-aos="fade-up"
+              data-aos-duration="3000" class="fa-solid fa-square-check text-[29px] me-[20px]">&nbsp;&nbsp;&nbsp;<span class="text-[20px] font-light">Single user</span></i>
+                        <i data-aos="fade-up"
+              data-aos-duration="3000" class="fa-solid fa-square-check text-[29px] me-[20px]">&nbsp;&nbsp;&nbsp;<span class="text-[20px] font-light">Limited features</span></i>
+                        <i data-aos="fade-up"
+              data-aos-duration="3000" class="fa-solid fa-square-check text-[29px] me-[20px]">&nbsp;&nbsp;&nbsp;<span class="text-[20px] font-light">Multiple users</span></i>
+                        <i data-aos="fade-up"
+              data-aos-duration="3000" class="fa-solid fa-square-check text-[29px] me-[20px]">&nbsp;&nbsp;&nbsp;<span class="text-[20px] font-light">Expanded features</span></i>
+                        <i data-aos="fade-up"
+              data-aos-duration="3000" class="fa-solid fa-square-check text-[29px] me-[20px]">&nbsp;&nbsp;&nbsp;<span class="text-[20px] font-light">Premium support</span></i>
+                      </div>
+                      <div class="row grid-cols-1 flex flex-col gap-[7px] ">
+                        <i data-aos="fade-up"
+              data-aos-duration="3000" class="fa-solid fa-square-check text-[29px] me-[20px]">&nbsp;&nbsp;&nbsp;<span class="text-[20px] font-light">24/7 support security</span></i>
+                        <i data-aos="fade-up"
+              data-aos-duration="3000" class="fa-solid fa-square-check text-[29px] me-[20px]">&nbsp;&nbsp;&nbsp;<span class="text-[20px] font-light">Reporting features</span></i>
+                        <i data-aos="fade-up"
+              data-aos-duration="3000" class="fa-solid fa-square-check text-[29px] me-[20px]">&nbsp;&nbsp;&nbsp;<span class="text-[20px] font-light">Real-time collaboration</span></i>
+                        <i data-aos="fade-up"
+              data-aos-duration="3000" class="fa-solid fa-square-check text-[29px] me-[20px]">&nbsp;&nbsp;&nbsp;<span class="text-[20px] font-light">Customization options</span></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="line w-[100%] h-[1px] bg-[grey] mt-[80px]"></div>
+
+                  <div class="w-[100%] flex justify-between items-center mt-[50px] h-[auto]">
+                    <h1 class="text-[25px] font-extralight">12.99$ <span class="text-[18px] text-[grey]">/ month</span></h1>
+                    <button data-aos="fade-up"
+                    data-aos-duration="3000" class="w-[auto]  flex justify-center h-[45px] items-center border-[1px] bg-[rgb(44,81,171)] px-[20px] duration-[1s] hover:bg-[#3c3c3c] rounded-[10px] border-[rgb(65,95,140)] md:flex font-light text-[16px]">Purchase</button>
+              </div>
+          </div>
+        </div>
+        </div>
+        <!-- main6 section end -->
+
+        <!-- main7 section start -->
+         <div class="main7 flex flex-col items-center w-[100%] h-[auto] bg-[black]">
+          <h1 class="wow animate__animated animate__bounceInDown sm:text-[50px] text-[white] text-center text-[30px] pt-[20px] font-medium " style="line-height: 130%;"> What are you waiting for?</h1>
+      <p  class="wow animate__animated animate__bounceInDown md:text-[16px] sm:text-[12px] text-center text-[10px] mb-[60px]  text-[rgb(204,204,205)] mt-[20px] ">Start simplifying your sleep today and sign up now!</p> 
+         <div class="w-[60%] h-[auto] overflow-hidden  flex flex-col items-center rounded-[15px] mb-[70px] border-[1px] border-[rgb(50,50,50)]">
+            <div data-aos="fade-down"
+   data-aos-duration="3000" class="line w-[1px] h-[80px] bg-[rgb(50,50,50)]"></div>
+            <img data-aos="fade-down"
+            data-aos-duration="3000" class="h-[55px] w-[55px] rounded-[10px]" style="box-shadow: rgb(48, 5, 204) 0px 50px 90px;" src="./Assets/webpage31.1.avif" alt="">
+            <h1 class="wow animate__animated animate__bounceInDown sm:text-[30px] text-[white] text-center text-[30px] pt-[20px] font-medium " style="line-height: 130%;"> Get early access</h1>
+      <p  class="wow animate__animated animate__bounceInDown md:text-[15px] sm:text-[12px] text-center text-[10px] mb-[45px]  text-[rgb(204,204,205)] mt-[10px] ">Aliquam et tellus urna. Phasellus egetadipiscing elit. Mauris id <br> nunc odio. Aliquam et tellus urna. Phasellus eget</p> 
+      <div class="w-[40%] duration-[0.6s] cursor-pointer hover:border-[white] px-[1%] h-[50px] flex justify-between items-center rounded-[8px] border-[1px] border-[rgb(50,50,50)]" style="box-shadow: rgba(0, 0, 0, 0.6) 0px 20px 305px -5px, rgba(10, 45, 242, 0.433) 0px 10px 10px -5px;">
+        <input class="w-[]" style="background-color: transparent;" type="email" placeholder=" Enter email here">
+        <i class="fa-solid fa-circle-arrow-right text-[rgb(76,122,211)] text-[28px]"></i>
+      </div>
+      <p  class="wow animate__animated animate__bounceInDown md:text-[15px] sm:text-[12px] text-center text-[10px] mb-[40px]  text-[rgb(204,204,205)] mt-[20px] ">Aliquam et tellus urna. Phasellus eget</p> 
+         </div>
+      </div>
+        <!-- main7 section end -->
+
+        <!-- main8 section start -->
+         <div class="main8 w-[100%] flex  flex-col items-center h-[auto] text-[white] pt-[140px]">
+          <div class="row grid grid-cols-1 md:grid-cols-2 px-[8vw]">
+            <div class="left w-[100%] h-[auto] grid-cols-1 ">
+              <h3 class="text-[30px] font-medium">snooze.</h3>
+              <p class=" text-[rgb(204,204,205)] md:text-[16px] mt-[10px] mb-[20px] sm:text-[12px]">Aliquam et tellus urna. Phasellus <br> egetadipiscing elit. Mauris id nunc odio. <br> Aliquam et tellus urna. Phasellus eget
+              </p>
+            </div>
+
+            <div class="right w-[100%] h-[auto]  grid-cols-1 ">
+              <div class="row grid gap-[25px]  grid-cols-1 md:grid-cols-3">
+
+                <div class="w-[100%] h-auto grid-cols-1 text ">
+                  <h4 class="uppercase text-[18px] mb-[8px]">Company</h4>
+                  <p class="text-[rgb(204,204,205)] mb-[4px]">What is Snooze</p>
+                  <p class="text-[rgb(204,204,205)] mb-[4px]">Download</p>
+                  <p class="text-[rgb(204,204,205)] mb-[4px]">Pricing</p>
+                  <p class="text-[rgb(204,204,205)] mb-[4px]">What they said</p>
+                </div>
+                <div class="w-[100%] h-auto grid-cols-1  ">
+                  <h4 class="uppercase text-[18px] mb-[8px]">Social media</h4>
+                 <p class="text-[rgb(204,204,205)] mb-[4px]">Instagram</p>
+                  <p class="text-[rgb(204,204,205)] mb-[4px]">Facebook</p>
+                  <p class="text-[rgb(204,204,205)] mb-[4px]">Linkedin</p>
+                  <p class="text-[rgb(204,204,205)] mb-[4px]">Twitter</p>
+                </div>
+                <div class="w-[100%] h-auto grid-cols-1  ">
+                  <h4 class="uppercase text-[18px] mb-[8px]">Webflow stuff
+                  </h4>
+                 <p class="text-[rgb(204,204,205)] mb-[4px]">Style Guide</p>
+                  <p class="text-[rgb(204,204,205)] mb-[4px]">Licensing</p>
+                  <p class="text-[rgb(204,204,205)] mb-[4px]">Instructions</p>
+                  <p class="text-[rgb(204,204,205)] mb-[4px]">Change Log</p>
+                </div>
+              </div>
+            </div>
+          </div>
+            <div class="line w-[84%]  h-[2px] mb-[40px] mt-[60px] bg-[grey]"></div>
+            <div class="w-[100%] text-[white] mb-[30px] px-[8vw] h-[auto]">
+              <div class="row gap-[20px] grid grid-cols-1 lg:grid-cols-2">
+                <div class="grid-cols-1 font-light  uppercase">
+                  <h1 class="text-[17px]">Created by <span class="text-[20px] underline">OVERSIGHT</span> </h1>
+                </div>
+                <div class="grid-cols-1 font-light text-end  uppercase">
+                  <h1 class="text-[17px]">Created by <span class="text-[20px] underline">OVERSIGHT</span></h1>
+                </div>
+              </div>
+            </div>
+         </div>
+        <!-- main8 section end -->
+  </body>
+  <!-- DATA AOS JS CDN -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- <script src="js/wow.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    AOS.init();
+    new WOW().init();
+  </script>
+
+  <!-- DATA AOS JS CDN -->
+  <!-- flikity JS CDN -->
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <!-- flikity JS CDN -->
+</html>
