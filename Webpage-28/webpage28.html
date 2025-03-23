@@ -1,0 +1,505 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Webpage - 28</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font font family cdn -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Kelly+Slab&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Rose:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Varela+Round&display=swap" rel="stylesheet">
+  <!-- font font family cdn -->
+
+  <!-- data AOS CSS CDN -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- data AOS CSS CDN -->
+
+  <!-- font awsome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- font awsome CDN -->
+
+  <!-- font-family: "Red Rose", serif;
+      font-family: "Open Sans", serif; -->
+</head>
+<body>
+    <!-- navbar section start -->
+  <div class="navbar w-[100%] h-[120px] bg-[rgba(248,245,221,0.87)] backdrop-blur-[5px] flex justify-between px-[7.5%] z-[10] items-center" style="position: fixed;" >
+      <div data-aos="fade-right"
+      data-aos-offset="300"
+      data-aos-duration="700"
+      data-aos-easing="ease-in-sine" class="left">
+        <svg width="190" height="50" viewBox="0 0 190 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9.53002 50V33.2898L38.9034 11.8799L46.9974 17.7546L55.0914 11.8799L38.9034 0L0 28.4595V50H9.53002Z" fill="#559449"/>
+          <path d="M41.2534 50V33.2898L70.4962 11.8799H86.6842L70.4962 0L31.7234 28.4595V50H41.2534Z" fill="#559449"/>
+          <path d="M62.952 44V40.022L78.524 23.226H63.564V19.214H84.78V23.192L69.174 39.988H85.154V44H62.952ZM94.9558 44.34C89.6178 44.34 86.0138 40.668 86.0138 34.956C86.0138 29.21 89.6178 25.606 94.9558 25.606C98.5598 25.606 100.974 27 102.028 29.006H102.266L102.402 25.912H106.992V44H102.164V40.77H101.926C100.804 42.946 98.1178 44.34 94.9558 44.34ZM96.4178 40.634C100.022 40.634 102.13 38.288 102.13 35.432V34.344C102.13 31.59 100.022 29.312 96.4178 29.312C93.1198 29.312 90.8758 31.318 90.8758 34.956C90.8758 38.492 93.0858 40.634 96.4178 40.634ZM109.922 23.362V19.214H114.75V23.362H109.922ZM109.922 44V25.912H114.75V44H109.922ZM117.676 49.678V25.912H122.232L122.402 29.006H122.606C123.694 27 126.108 25.606 129.678 25.606C135.016 25.606 138.62 29.21 138.62 34.956C138.62 40.668 135.016 44.34 129.644 44.34C126.516 44.34 123.83 42.946 122.708 40.77H122.504V49.678H117.676ZM128.25 40.634C131.548 40.634 133.758 38.492 133.758 34.956C133.758 31.352 131.548 29.312 128.25 29.312C124.612 29.312 122.504 31.59 122.504 34.344V35.432C122.504 38.288 124.612 40.634 128.25 40.634ZM148.929 44.34C143.591 44.34 139.987 40.668 139.987 34.956C139.987 29.21 143.591 25.606 148.929 25.606C152.533 25.606 154.947 27 156.002 29.006H156.239L156.375 25.912H160.965V44H156.137V40.77H155.899C154.777 42.946 152.091 44.34 148.929 44.34ZM150.391 40.634C153.995 40.634 156.103 38.288 156.103 35.432V34.344C156.103 31.59 153.995 29.312 150.391 29.312C147.093 29.312 144.849 31.318 144.849 34.956C144.849 38.492 147.059 40.634 150.391 40.634ZM163.896 44V25.912H168.248L168.452 28.938H168.656C169.404 26.898 171.274 25.64 173.722 25.64C174.368 25.64 174.878 25.674 175.286 25.776V30.128C174.776 30.026 174.164 29.958 173.62 29.958C170.696 29.958 168.826 31.454 168.724 34.786V44H163.896ZM184.43 44C181.54 44 179.772 42.674 179.772 39.784V29.584H176.236V25.912H179.772V21.084L184.532 20.166V25.912H189.122V29.584H184.532V38.288C184.532 39.512 185.144 39.852 186.334 39.852H189.122V44H184.43Z" fill="#153436"/>
+          </svg>
+      </div>
+      <div class="center flex gap-[30px] text-[18px]" style="font-family: Red Rose", serif;>
+        <a href="#" class="hidden xl:flex">Home</a>
+        <a href="#" class="hidden xl:flex">Demos</a>
+        <a href="#" class="hidden xl:flex">Inner Pages</a>
+        <a href="#" class="hidden xl:flex">Utility Pages</a>
+        <a href="#" class="hidden xl:flex">Authentication</a>
+        <i class="flex xl:hidden fa-solid fa-bars text-[25px]"></i>
+      </div>
+      <div class="right hidden lg:flex w-[250px] h-[55px] overflow-hidden rounded-[10px] border-[1px] border-black" style="font-family: Red Rose, serif;" >
+        <div class="flex justify-center cursor-pointer flex- gap-[25px]  flex-col border-[1px] border-black items-center h-[110px] w-[250px] hover:translate-y-[-50%] duration-[0.8S]">
+        <h1 class="text-[20px]">Purchese Template</h1>
+        <h1 class="text-[20px]">Purchese Template</h1>
+      </div>
+      </div>
+  </div>
+    <!-- navbar section end -->
+
+
+    <!-- main1 section start -->
+  <div class="main1 pt-[120px] w-[100%] flex flex-col items-center h-[1947px]" style="font-family: Red Rose, serif;  background-image: url(./Assets/webpage28.1.png);">
+    <h2 data-aos="fade-down"
+    data-aos-duration="3000" class="uppercase mb-[30px] md:mb-[0px] xl:mb-[0px] text-[rgb(85,148,73)] pt-[120px] text-[20px]" style="font-family: Red Rose, serif; text-align: center;" >(Real Estate Webflow Template)</h2>
+    <h1 data-aos="fade-up"
+    data-aos-duration="2000" class="text-[30px] font-extrabold sm:text-[70px] xl:text-[90px]" style="font-family: Red Rose, serif; text-align: center; ;  ">Real Estate & Property Management Template.</h1>
+    <p class="mx-[20%] sm:mx-[10%]: text-[rgb(97,96,91)] text-center text-[20px] mt-[10px]" style="font-family: Open Sans, serif;">Take advantage of top-quality design, user-friendly, public demand, cool animations it all is, and all the features you need to build a webflow site for your business demand.</p>
+
+    <div class="buttons flex flex-col items-center gap-[20px] sm:flex-row mt-[30px]">
+      <div class="right  lg:flex w-[250px] h-[55px] overflow-hidden rounded-[10px] text-[white]" style="font-family: Red Rose, serif;" >
+        <div class="flex justify-center cursor-pointer flex- gap-[25px] text-[whit]  flex-col border-[1px] bg-[rgb(85,148,73)] items-center h-[110px] w-[250px] hover:translate-y-[-50%] duration-[0.8S]">
+        <h1 class="text-[20px]">Purchese Template</h1>
+        <h1 class="text-[20px]">Purchese Template</h1>
+      </div>
+      </div>
+      <div class="right  lg:flex w-[290px] h-[55px] overflow-hidden rounded-[10px] text-[black]" style="font-family: Red Rose, serif;" >
+        <div class="flex justify-center cursor-pointer flex- gap-[25px] text-[whit]  flex-col border-[1px] bg-[white] items-center h-[110px] w-[290px] hover:translate-y-[-50%] duration-[0.8S]">
+        <h1 class="text-[20px]">Explore More Templates</h1>
+        <h1 class="text-[20px]">Explore More Templates</h1>
+      </div>
+      </div>
+    </div>
+
+    <div class="slider flex gap-[25px] w-[100%] h-[500px] mt-[100px]">
+      <marquee  direction="left" scrollamount="10" behaviour="loop" class="w-[100%] h-[500px] flex justify-center items-center bottom-1 border-black">
+        <div class="image w-[100%] h-[500px] flex gap-[20px] *:round-[5px]">
+          <img src="./Assets/Loop photo1.png" class="w-[500px] h-[500px]">
+          <img src="./Assets/Loop photo2.png" class="w-[500px] h-[500px]">
+          <img src="./Assets/Loop photo3.png" class="w-[500px] h-[500px]">
+          <img src="./Assets/Loop photo4.png" class="w-[500px] h-[500px]">
+          <img src="./Assets/Loop photo5.png" class="w-[500px] h-[500px]">
+        </div>
+      </marquee>
+    </div>
+
+    <div class="slider flex gap-[25px] w-[100%] h-[500px] mt-[40px]">
+      <marquee  direction="right" scrollamount="10" behaviour="loop" class="w-[100%] h-[500px] flex justify-center items-center bottom-1 border-black">
+        <div class="image w-[100%] h-[500px] flex gap-[20px] *:round-[5px]">
+          <img src="./Assets/loop photo6.png" class="w-[500px] h-[500px]">
+          <img src="./Assets/Loop photo7.png" class="w-[500px] h-[500px]">
+          <img src="./Assets/Loop photo8.png" class="w-[500px] h-[500px]">
+          <img src="./Assets/Loop photo9.png" class="w-[500px] h-[500px]">
+          <img src="./Assets/Loop photo10.png" class="w-[500px] h-[500px]">
+        </div>
+      </marquee>
+    </div>
+
+  </div>
+    <!-- main1 section end -->
+    
+    <!-- main2 section start -->
+    <div class="main2 w-[100%] flex flex-col items-center bg-[rgb(255,253,236)] h-auto">
+      <div data-aos="fade-down"
+      data-aos-duration="3000" class="threein1 flex justify-center mb-[20px] items-center w-[100%] h-[50px] gap-[15px] pt-[190px] ">
+        <div class="line w-[70px] bg-[rgb(85,148,73)] h-[1px]"></div>
+      <h4 class="text-[22px] text-[rgb(85,148,73)] uppercase" style="font-family: Red Rose, serif;">Features</h4>
+      <div class="line w-[70px] bg-[rgb(85,148,73)] h-[1px]"></div>
+      </div>
+      <h1 data-aos="fade-right"
+      data-aos-offset="300"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-sine" class="text-[35px] sm:text-[45px] md:text-[55px] lg:text-[60px] text-center" style="font-family: Red Rose, serif; font-weight: 600;">What’s Included In Zaipart</h1>
+      <p data-aos="fade-left"
+      data-aos-offset="300"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-sine" class="text-[18px] mx-[26%] text-[rgb(97,96,91)] text-center" style="font-family: Open Sans, serif; font-weight: 400;">Zaipart webflow template includes 15+ pages in total, with more than 15+ sections, and 2 different home pages with amazing features.</p>
+
+    <div class="boxes flex flex-wrap  justify-center mb-[120px]   xl:flex-row  gap-[30px] mt-[40px] w-[100%] h-auto  ">
+      <div data-aos="fade-up"
+      data-aos-duration="3000" class="box1 w-[400px] h-[500px] p-[40px]  flex flex-col items-center border-[2px] bg-white  rgb(224,224,224) rounded-[15px]">
+        <div class="w-[170px] h-[170px] bg-[rgb(85,148,73)] flex justify-center items-center rounded-[90px]">
+          <img src="./Assets/webpage28.2.svg" alt="">
+        </div>
+        <h2  class="text-[30px] mt-[40px]" style="font-family: red Rose, serif;">2 landing Pages</h2>
+      <p class="text-[19px] mt-[15px] text-[rgb(97,96,91)] text-center" >Zairpart has 2 stunning home pages design. it includes so many real estate & property management ideas for grow your future living & business in a better way.</p>
+      </div>
+      <div data-aos="fade-up"
+      data-aos-duration="3000" class="box2 w-[400px] h-[500px] p-[40px] flex flex-col items-center border-[2px]  bg-white  rgb(224,224,224) rounded-[15px]">
+        <div class="w-[170px] h-[170px] bg-[rgb(85,148,73)] flex justify-center items-center rounded-[90px]">
+          <img src="./Assets/webpage28.3.svg" alt="">
+        </div>
+        <h2 class="text-[30px] mt-[40px]" style="font-family: red Rose, serif;">15+ Sections</h2>
+        <p class="text-[19px] mt-[15px] text-[rgb(97,96,91)] text-center">Zairpart has 15+ amazing and creative sections which will help you to build stunning website with powerful and some of the great ideas.</p>
+    </div>
+      <div data-aos="fade-up"
+      data-aos-duration="3000" class="box3 w-[400px] h-[500px] p-[40px] flex flex-col items-center border-[2px]  bg-white  rgb(224,224,224) rounded-[15px]">
+        <div class="w-[170px] h-[170px] bg-[rgb(85,148,73)] flex justify-center items-center rounded-[90px]">
+          <img src="./Assets/webpage28.4.svg" alt="">
+        </div>
+        <h2 class="text-[30px] mt-[40px]" style="font-family: red Rose, serif;">15+ Inner Pages</h2>
+        <p class="text-[19px] mt-[15px] text-[rgb(97,96,91)] text-center">Zairpart has 15+ important inner pages that will be needed for your business. you can customize these functionalities with your ideas.</p>
+    </div>
+    </div>
+  </div>
+
+      <div class="main2 w-[100%] flex flex-col items-center bg-[rgb(255,255,255)] h-auto">
+        <div data-aos="fade-down"
+        data-aos-duration="3000" class="threein1 flex justify-center mb-[20px] items-center w-[100%] h-[50px] gap-[15px] pt-[190px] ">
+          <div class="line w-[70px] bg-[rgb(85,148,73)] h-[1px]"></div>
+        <h4 class="text-[22px] text-[rgb(85,148,73)] uppercase" style="font-family: Red Rose, serif;">home pages</h4>
+        <div class="line w-[70px] bg-[rgb(85,148,73)] h-[1px]"></div>
+        </div>
+        <h1 data-aos="fade-up"
+        data-aos-duration="3000" class="text-[35px] sm:text-[45px] md:text-[55px] lg:text-[60px] text-center" style="font-family: Red Rose, serif; font-weight: 600;">2 Eye Catching Home Pages</h1>
+        <p data-aos="fade-up"
+        data-aos-duration="3000" class="text-[18px] mx-[26%] text-[rgb(97,96,91)] text-center" style="font-family: Open Sans, serif; font-weight: 400;">The homepage is the face of your website. select one from two amazing homepages, to introduce your users to what you're doing. get your website off the ground.
+        </p>
+        <div class="flex justify-between w-[90%] h-auto mt-[55px] ">
+          <div class="row w-[100%] h-auto grid gap-[2%] grid-cols-1  lg:grid-cols-2">
+          <div class="photoleft   relative w-[99%] h-[650px] border-[21px]  hover:border-[rgb(85,148,73)] duration-[0.8S] cursor-pointer  rounded-[20px] bg-[rgb(244,241,211)]  border-[rgb(244,241,211)]">
+            <div class="overflow-hidden w-[100%] h-[100%] ">
+              <img class="w-[100%] h-[100%] rounded-[20px] duration-[0.6S] hover:scale-[1.1] object-center" src="./Assets/webpage28.5.png" alt="">
+            </div>
+            <button class="absolute bottom-[70px] h-[45px] text-[20px] left-[-20px] w-[150px] bg-[#ffffff] " style="font-family: Red Rose, serif; border-top-right-radius: 10px; border-bottom-right-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;" >Home V1</button>
+          </div>
+          <div class="photoright   relative w-[99%] h-[650px] border-[21px]  hover:border-[rgb(85,148,73)] duration-[0.8S] cursor-pointer  rounded-[20px] bg-[rgb(244,241,211)]  border-[rgb(244,241,211)]">
+            <div class="overflow-hidden w-[100%] h-[100%] ">
+              <img class="w-[100%] h-[100%] rounded-[20px] duration-[0.6S] hover:scale-[1.1] " src="./Assets/webpage28.6.png" alt="">
+            </div>
+            <button class="absolute bottom-[70px] h-[45px] text-[20px] left-[-20px] w-[150px] bg-[#ffffff] " style="font-family: Red Rose, serif; border-top-right-radius: 10px; border-bottom-right-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;" >Home V2</button>
+          </div>
+        </div>
+      </div>
+      
+      <div data-aos="fade-down"
+        data-aos-duration="3000" class="threein1 flex justify-center mb-[20px] items-center w-[100%] h-[50px] gap-[15px] pt-[190px] ">
+          <div class="line w-[70px] bg-[rgb(85,148,73)] h-[1px]"></div>
+        <h4 class="text-[22px] text-[rgb(85,148,73)] uppercase" style="font-family: Red Rose, serif;">
+          inner pages</h4>
+        <div class="line w-[70px] bg-[rgb(85,148,73)] h-[1px]"></div>
+        </div>
+        <h1 data-aos="fade-up"
+        data-aos-duration="3000" class="text-[35px] sm:text-[45px] md:text-[55px] lg:text-[60px] text-center" style="font-family: Red Rose, serif; font-weight: 600;">Stunning Inner Pages</h1>
+        <p data-aos="fade-up"
+        data-aos-duration="3000" class="text-[18px] mx-[26%] text-[rgb(97,96,91)] text-center" style="font-family: Open Sans, serif; font-weight: 400;">We have stunning 15+ inner page. you will use in your website beautifully.
+        </p>
+
+        <div class="flex justify-between w-[90%] h-auto mt-[55px] ">
+          <div class="row w-[100%] h-auto grid gap-[2%] grid-cols-1  lg:grid-cols-2">
+          <div class="photoleft   relative w-[99%] h-[650px] border-[21px]  hover:border-[rgb(85,148,73)] duration-[0.8S] cursor-pointer  rounded-[20px] bg-[rgb(244,241,211)]  border-[rgb(244,241,211)]">
+            <div class="overflow-hidden w-[100%] h-[100%] ">
+              <img class="w-[100%] h-[100%] rounded-[20px] duration-[0.6S] hover:scale-[1.1] object-center" src="./Assets/Loop photo1.png" alt="">
+            </div>
+            <button class="absolute bottom-[70px] h-[45px] text-[20px] left-[-20px] w-[150px] bg-[#ffffff] " style="font-family: Red Rose, serif; border-top-right-radius: 10px; border-bottom-right-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;" >About Us</button>
+          </div>
+          <div class="photoright   relative w-[99%] h-[650px] border-[21px]  hover:border-[rgb(85,148,73)] duration-[0.8S] cursor-pointer  rounded-[20px] bg-[rgb(244,241,211)]  border-[rgb(244,241,211)]">
+            <div class="overflow-hidden w-[100%] h-[100%] ">
+              <img class="w-[100%] h-[100%] rounded-[20px] duration-[0.6S] hover:scale-[1.1] " src="./Assets/webpage28.6.png" alt="">
+            </div>
+            <button class="absolute bottom-[70px] h-[45px] text-[20px] left-[-20px] w-[150px] bg-[#ffffff] " style="font-family: Red Rose, serif; border-top-right-radius: 10px; border-bottom-right-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;" >Contact Us</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex justify-between w-[90%] h-auto mt-[55px] ">
+        <div class="row w-[100%] h-auto grid gap-[2%] grid-cols-1  lg:grid-cols-2">
+        <div class="photoleft   relative w-[99%] h-[650px] border-[21px]  hover:border-[rgb(85,148,73)] duration-[0.8S] cursor-pointer  rounded-[20px] bg-[rgb(244,241,211)]  border-[rgb(244,241,211)]">
+          <div class="overflow-hidden w-[100%] h-[100%] ">
+            <img class="w-[100%] h-[100%] rounded-[20px] duration-[0.6S] hover:scale-[1.1] object-center" src="./Assets/webpage28.8.png" alt="">
+          </div>
+          <button class="absolute bottom-[70px] h-[45px] text-[20px] left-[-20px] w-[150px] bg-[#ffffff] " style="font-family: Red Rose, serif; border-top-right-radius: 10px; border-bottom-right-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;" >Blog </button>
+        </div>
+        <div class="photoright   relative w-[99%] h-[650px] border-[21px]  hover:border-[rgb(85,148,73)] duration-[0.8S] cursor-pointer  rounded-[20px] bg-[rgb(244,241,211)]  border-[rgb(244,241,211)]">
+          <div class="overflow-hidden w-[100%] h-[100%] ">
+            <img class="w-[100%] h-[100%] rounded-[20px] duration-[0.6S] hover:scale-[1.1] " src="./Assets/webpage28.9.png" alt="">
+          </div>
+          <button class="absolute bottom-[70px] h-[45px] text-[20px] left-[-20px] w-[150px] bg-[#ffffff] " style="font-family: Red Rose, serif; border-top-right-radius: 10px; border-bottom-right-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;" >Blog Single</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex justify-between w-[90%] h-auto mt-[55px] ">
+      <div class="row w-[100%] h-auto grid gap-[2%] grid-cols-1  lg:grid-cols-2">
+      <div class="photoleft   relative w-[99%] h-[650px] border-[21px]  hover:border-[rgb(85,148,73)] duration-[0.8S] cursor-pointer  rounded-[20px] bg-[rgb(244,241,211)]  border-[rgb(244,241,211)]">
+        <div class="overflow-hidden w-[100%] h-[100%] ">
+          <img class="w-[100%] h-[100%] rounded-[20px] duration-[0.6S] hover:scale-[1.1] object-center" src="./Assets/webpage28.10.png" alt="">
+        </div>
+        <button class="absolute bottom-[70px] h-[45px] text-[20px] left-[-20px] w-[150px] bg-[#ffffff] " style="font-family: Red Rose, serif; border-top-right-radius: 10px; border-bottom-right-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;" >Property </button>
+      </div>
+      <div class="photoright   relative w-[99%] h-[650px] border-[21px]  hover:border-[rgb(85,148,73)] duration-[0.8S] cursor-pointer  rounded-[20px] bg-[rgb(244,241,211)]  border-[rgb(244,241,211)]">
+        <div class="overflow-hidden w-[100%] h-[100%] ">
+          <img class="w-[100%] h-[100%] rounded-[20px] duration-[0.6S] hover:scale-[1.1] " src="./Assets/webpage28.11.png" alt="">
+        </div>
+        <button class="absolute bottom-[70px] h-[45px] text-[20px] left-[-20px] w-[200px] bg-[#ffffff] " style="font-family: Red Rose, serif; border-top-right-radius: 10px; border-bottom-right-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;" >Property Single</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex justify-between w-[90%] h-auto mt-[55px] ">
+    <div class="row w-[100%] h-auto grid gap-[2%] grid-cols-1  lg:grid-cols-2">
+    <div class="photoleft   relative w-[99%] h-[650px] border-[21px]  hover:border-[rgb(85,148,73)] duration-[0.8S] cursor-pointer  rounded-[20px] bg-[rgb(244,241,211)]  border-[rgb(244,241,211)]">
+      <div class="overflow-hidden w-[100%] h-[100%] ">
+        <img class="w-[100%] h-[100%] rounded-[20px] duration-[0.6S] hover:scale-[1.1] object-center" src="./Assets/webpage28.12.png" alt="">
+      </div>
+      <button class="absolute bottom-[70px] h-[45px] text-[20px] left-[-20px] w-[150px] bg-[#ffffff] " style="font-family: Red Rose, serif; border-top-right-radius: 10px; border-bottom-right-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;" >Pricing </button>
+    </div>
+    <div class="photoright   relative w-[99%] h-[650px] border-[21px]  hover:border-[rgb(85,148,73)] duration-[0.8S] cursor-pointer  rounded-[20px] bg-[rgb(244,241,211)]  border-[rgb(244,241,211)]">
+      <div class="overflow-hidden w-[100%] h-[100%] ">
+        <img class="w-[100%] h-[100%] rounded-[20px] duration-[0.6S] hover:scale-[1.1] " src="./Assets/webpage28.13.png" alt="">
+      </div>
+      <button class="absolute bottom-[70px] h-[45px] text-[20px] left-[-20px] w-[200px] bg-[#ffffff] " style="font-family: Red Rose, serif; border-top-right-radius: 10px; border-bottom-right-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;" >Pricing Single</button>
+    </div>
+  </div>
+</div>
+
+<div class="flex justify-between w-[90%] h-auto mt-[55px] ">
+  <div class="row w-[100%] h-auto grid gap-[2%] grid-cols-1  lg:grid-cols-2">
+  <div class="photoleft   relative w-[99%] h-[650px] border-[21px]  hover:border-[rgb(85,148,73)] duration-[0.8S] cursor-pointer  rounded-[20px] bg-[rgb(244,241,211)]  border-[rgb(244,241,211)]">
+    <div class="overflow-hidden w-[100%] h-[100%] ">
+      <img class="w-[100%] h-[100%] rounded-[20px] duration-[0.6S] hover:scale-[1.1] object-center" src="./Assets/webpage28.14.png" alt="">
+    </div>
+    <button class="absolute bottom-[70px] h-[45px] text-[20px] left-[-20px] w-[150px] bg-[#ffffff] " style="font-family: Red Rose, serif; border-top-right-radius: 10px; border-bottom-right-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;" >Agent </button>
+  </div>
+  <div class="photoright   relative w-[99%] h-[650px] border-[21px]  hover:border-[rgb(85,148,73)] duration-[0.8S] cursor-pointer  rounded-[20px] bg-[rgb(244,241,211)]  border-[rgb(244,241,211)]">
+    <div class="overflow-hidden w-[100%] h-[100%] ">
+      <img class="w-[100%] h-[100%] rounded-[20px] duration-[0.6S] hover:scale-[1.1] " src="./Assets/webpage28.15.png" alt="">
+    </div>
+    <button class="absolute bottom-[70px] h-[45px] text-[20px] left-[-20px] w-[200px] bg-[#ffffff] " style="font-family: Red Rose, serif; border-top-right-radius: 10px; border-bottom-right-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;" >Agent Single</button>
+  </div>
+</div>
+</div>
+
+<div class="flex justify-between w-[90%] h-auto mt-[55px] ">
+  <div class="row w-[100%] h-auto grid gap-[2%] grid-cols-1  lg:grid-cols-2">
+  <div class="photoleft   relative w-[99%] h-[650px] border-[21px]  hover:border-[rgb(85,148,73)] duration-[0.8S] cursor-pointer  rounded-[20px] bg-[rgb(244,241,211)]  border-[rgb(244,241,211)]">
+    <div class="overflow-hidden w-[100%] h-[100%] ">
+      <img class="w-[100%] h-[100%] rounded-[20px] duration-[0.6S] hover:scale-[1.1] object-center" src="./Assets/webpage28.16.png" alt="">
+    </div>
+    <button class="absolute bottom-[70px] h-[45px] text-[20px] left-[-20px] w-[150px] bg-[#ffffff] " style="font-family: Red Rose, serif; border-top-right-radius: 10px; border-bottom-right-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;" >Service </button>
+  </div>
+  <div class="photoright   relative w-[99%] h-[650px] border-[21px]  hover:border-[rgb(85,148,73)] duration-[0.8S] cursor-pointer  rounded-[20px] bg-[rgb(244,241,211)]  border-[rgb(244,241,211)]">
+    <div class="overflow-hidden w-[100%] h-[100%] ">
+      <img class="w-[100%] h-[100%] rounded-[20px] duration-[0.6S] hover:scale-[1.1] " src="./Assets/webpage28.17.png" alt="">
+    </div>
+    <button class="absolute bottom-[70px] h-[45px] text-[20px] left-[-20px] w-[200px] bg-[#ffffff] " style="font-family: Red Rose, serif; border-top-right-radius: 10px; border-bottom-right-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;" >Add Property</button>
+  </div>
+</div>
+</div>
+
+<div class="flex justify-between w-[90%] h-auto mt-[55px] ">
+  <div class="row w-[100%] h-auto grid gap-[2%] grid-cols-1  lg:grid-cols-2">
+  <div class="photoleft   relative w-[99%] h-[650px] border-[21px]  hover:border-[rgb(85,148,73)] duration-[0.8S] cursor-pointer  rounded-[20px] bg-[rgb(244,241,211)]  border-[rgb(244,241,211)]">
+    <div class="overflow-hidden w-[100%] h-[100%] ">
+      <img class="w-[100%] h-[100%] rounded-[20px] duration-[0.6S] hover:scale-[1.1] object-center" src="./Assets/webpage28.18.png" alt="">
+    </div>
+    <button class="absolute bottom-[70px] h-[45px] text-[20px] left-[-20px] w-[250px] bg-[#ffffff] " style="font-family: Red Rose, serif; border-top-right-radius: 10px; border-bottom-right-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;" >Property By Location </button>
+  </div>
+  <div class="photoright   relative w-[99%] h-[650px] border-[21px]  hover:border-[rgb(85,148,73)] duration-[0.8S] cursor-pointer  rounded-[20px] bg-[rgb(244,241,211)]  border-[rgb(244,241,211)]">
+    <div class="overflow-hidden w-[100%] h-[100%] ">
+      <img class="w-[100%] h-[100%] rounded-[20px] duration-[0.6S] hover:scale-[1.1] " src="./Assets/webpage28.19.png" alt="">
+    </div>
+    <button class="absolute bottom-[70px] h-[45px] text-[20px] left-[-20px] w-[220px] bg-[#ffffff] " style="font-family: Red Rose, serif; border-top-right-radius: 10px; border-bottom-right-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;" >Property By Type</button>
+  </div>
+</div>
+</div>
+
+<div data-aos="fade-down"
+data-aos-duration="3000" class="threein1 flex justify-center mb-[20px] items-center w-[100%] h-[50px] gap-[15px] pt-[190px] ">
+  <div class="line w-[70px] bg-[rgb(85,148,73)] h-[1px]"></div>
+<h4 class="text-[22px] text-[rgb(85,148,73)] uppercase" style="font-family: Red Rose, serif;">
+  utility pages</h4>
+<div class="line w-[70px] bg-[rgb(85,148,73)] h-[1px]"></div>
+</div>
+<h1 data-aos="fade-up"
+data-aos-duration="3000" class="text-[35px] sm:text-[45px] md:text-[55px] lg:text-[60px] text-center" style="font-family: Red Rose, serif; font-weight: 600;">Needed Utility Pages.</h1>
+<p data-aos="fade-up"
+data-aos-duration="3000" class="text-[18px] mx-[26%] text-[rgb(97,96,91)] text-center" style="font-family: Open Sans, serif; font-weight: 400;">We have stunning 15+ inner page. you will use in your website beautifully.
+</p>
+
+<div class="flex justify-between w-[90%] h-auto mt-[55px] ">
+  <div class="row w-[100%] h-auto grid gap-[2%] grid-cols-1  lg:grid-cols-2">
+  <div class="photoleft   relative w-[99%] h-[650px] border-[21px]  hover:border-[rgb(85,148,73)] duration-[0.8S] cursor-pointer  rounded-[20px] bg-[rgb(244,241,211)]  border-[rgb(244,241,211)]">
+    <div class="overflow-hidden w-[100%] h-[100%] ">
+      <img class="w-[100%] h-[100%] rounded-[20px] duration-[0.6S] hover:scale-[1.1] object-center" src="./Assets/webpage28.20.png" alt="">
+    </div>
+    <button class="absolute bottom-[70px] h-[45px] text-[20px] left-[-20px] w-[250px] bg-[#ffffff] " style="font-family: Red Rose, serif; border-top-right-radius: 10px; border-bottom-right-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;" >Password Protected</button>
+  </div>
+  <div class="photoright   relative w-[99%] h-[650px] border-[21px]  hover:border-[rgb(85,148,73)] duration-[0.8S] cursor-pointer  rounded-[20px] bg-[rgb(244,241,211)]  border-[rgb(244,241,211)]">
+    <div class="overflow-hidden w-[100%] h-[100%] ">
+      <img class="w-[100%] h-[100%] rounded-[20px] duration-[0.6S] hover:scale-[1.1] " src="./Assets/webpage28.21.png" alt="">
+    </div>
+    <button class="absolute bottom-[70px] h-[45px] text-[20px] left-[-20px] w-[190px] bg-[#ffffff] " style="font-family: Red Rose, serif; border-top-right-radius: 10px; border-bottom-right-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;" >Changelog</button>
+  </div>
+</div>
+</div>
+
+<div class="flex justify-between w-[90%] h-auto mt-[55px] ">
+  <div class="row w-[100%] h-auto grid gap-[2%] grid-cols-1  lg:grid-cols-2">
+  <div class="photoleft   relative w-[99%] h-[650px] border-[21px]  hover:border-[rgb(85,148,73)] duration-[0.8S] cursor-pointer  rounded-[20px] bg-[rgb(244,241,211)]  border-[rgb(244,241,211)]">
+    <div class="overflow-hidden w-[100%] h-[100%] ">
+      <img class="w-[100%] h-[100%] rounded-[20px] duration-[0.6S] hover:scale-[1.1] object-center" src="./Assets/webpage28.22.png" alt="">
+    </div>
+    <button class="absolute bottom-[70px] h-[45px] text-[20px] left-[-20px] w-[200px] bg-[#ffffff] " style="font-family: Red Rose, serif; border-top-right-radius: 10px; border-bottom-right-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;" >Style Guide
+      </button>
+  </div>
+  <div class="photoright   relative w-[99%] h-[650px] border-[21px]  hover:border-[rgb(85,148,73)] duration-[0.8S] cursor-pointer  rounded-[20px] bg-[rgb(244,241,211)]  border-[rgb(244,241,211)]">
+    <div class="overflow-hidden w-[100%] h-[100%] ">
+      <img class="w-[100%] h-[100%] rounded-[20px] duration-[0.6S] hover:scale-[1.1] " src="./Assets/webpage28.23.png" alt="">
+    </div>
+    <button class="absolute bottom-[70px] h-[45px] text-[20px] left-[-20px] w-[170px] bg-[#ffffff] " style="font-family: Red Rose, serif; border-top-right-radius: 10px; border-bottom-right-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;" > License</button>
+  </div>
+</div>
+</div>
+
+<div class="flex justify-center items-center border-[1px] w-[90%] h-auto mt-[55px] ">
+  <div class="row w-[100%] h-auto flex justify-center  items-center">
+  <div class="photoleft  relative w-[100%] lg:w-[49%] h-[650px] border-[21px]  hover:border-[rgb(85,148,73)] duration-[0.8S] cursor-pointer  rounded-[20px] bg-[rgb(244,241,211)]  border-[rgb(244,241,211)]">
+    <div class="overflow-hidden w-[100%] h-[100%] ">
+      <img class="w-[100%] h-[100%] rounded-[20px] duration-[0.6S] hover:scale-[1.1] object-center" src="./Assets/webpage28.24.png" alt="">
+    </div>
+    <button class="absolute bottom-[70px] h-[45px] text-[20px] left-[-20px] w-[200px] bg-[#ffffff] " style="font-family: Red Rose, serif; border-top-right-radius: 10px; border-bottom-right-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;" >404 Not Found
+      </button>
+  </div>
+</div>
+</div>
+
+<div data-aos="fade-down"
+data-aos-duration="3000" class="threein1 flex justify-center mb-[20px] items-center w-[100%] h-[50px] gap-[15px] pt-[190px] ">
+  <div class="line w-[70px] bg-[rgb(85,148,73)] h-[1px]"></div>
+<h4 class="text-[22px] text-[rgb(85,148,73)] uppercase" style="font-family: Red Rose, serif;">
+  Authentication</h4>
+<div class="line w-[70px] bg-[rgb(85,148,73)] h-[1px]"></div>
+</div>
+<h1 data-aos="fade-up"
+data-aos-duration="3000" class="text-[35px] sm:text-[45px] md:text-[55px] lg:text-[60px] text-center" style="font-family: Red Rose, serif; font-weight: 600;">Authentication Form</h1>
+<p data-aos="fade-up"
+data-aos-duration="3000" class="text-[18px] mx-[26%] text-[rgb(97,96,91)] text-center" style="font-family: Open Sans, serif; font-weight: 400;">We have stunning 15+ inner page. you will use in your website beautifully.
+</p>
+
+<div class="flex justify-between w-[90%] h-auto mt-[55px] ">
+  <div class="row w-[100%] h-auto grid gap-[2%] grid-cols-1  lg:grid-cols-2">
+  <div class="photoleft   relative w-[99%] h-[500px] border-[21px]  hover:border-[rgb(85,148,73)] duration-[0.8S] cursor-pointer  rounded-[20px] bg-[rgb(244,241,211)]  border-[rgb(244,241,211)]">
+    <div class="overflow-hidden w-[100%] h-[100%] ">
+      <img class="w-[100%] h-[100%] rounded-[20px] duration-[0.6S] hover:scale-[1.1] object-center" src="./Assets/webpage28.25.png" alt="">
+    </div>
+    <button class="absolute bottom-[70px] h-[45px] text-[20px] left-[-20px] w-[150px] bg-[#ffffff] " style="font-family: Red Rose, serif; border-top-right-radius: 10px; border-bottom-right-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;" >Sing In</button>
+  </div>
+  <div class="photoright   relative w-[99%] h-[500px] border-[21px]  hover:border-[rgb(85,148,73)] duration-[0.8S] cursor-pointer  rounded-[20px] bg-[rgb(244,241,211)]  border-[rgb(244,241,211)]">
+    <div class="overflow-hidden w-[100%] h-[100%] ">
+      <img class="w-[100%] h-[100%] rounded-[20px] duration-[0.6S] hover:scale-[1.1] " src="./Assets/webpage28.26.png" alt="">
+    </div>
+    <button class="absolute bottom-[70px] h-[45px] text-[20px] left-[-20px] w-[150px] bg-[#ffffff] " style="font-family: Red Rose, serif; border-top-right-radius: 10px; border-bottom-right-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;" >Sing Up</button>
+  </div>
+</div>
+</div>
+
+<div class="flex justify-between w-[90%] h-auto mt-[55px] mb-[150px]">
+  <div class="row w-[100%] h-auto grid gap-[2%] grid-cols-1  lg:grid-cols-2">
+  <div class="photoleft   relative w-[99%] h-[500px] border-[21px]  hover:border-[rgb(85,148,73)] duration-[0.8S] cursor-pointer  rounded-[20px] bg-[rgb(244,241,211)]  border-[rgb(244,241,211)]">
+    <div class="overflow-hidden w-[100%] h-[100%] ">
+      <img class="w-[100%] h-[100%] rounded-[20px] duration-[0.6S] hover:scale-[1.1] object-center" src="./Assets/webpage28.27.png" alt="">
+    </div>
+    <button class="absolute bottom-[70px] h-[45px] text-[20px] left-[-20px] w-[230px] bg-[#ffffff] " style="font-family: Red Rose, serif; border-top-right-radius: 10px; border-bottom-right-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;" >Forgot Password</button>
+  </div>
+  <div class="photoright   relative w-[99%] h-[500px] border-[21px]  hover:border-[rgb(85,148,73)] duration-[0.8S] cursor-pointer  rounded-[20px] bg-[rgb(244,241,211)]  border-[rgb(244,241,211)]">
+    <div class="overflow-hidden w-[100%] h-[100%] ">
+      <img class="w-[100%] h-[100%] rounded-[20px] duration-[0.6S] hover:scale-[1.1] " src="./Assets/webpage28.29.png" alt="">
+    </div>
+    <button class="absolute bottom-[70px] h-[45px] text-[20px] left-[-20px] w-[230px] bg-[#ffffff] " style="font-family: Red Rose, serif; border-top-right-radius: 10px; border-bottom-right-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;" >Reset Password</button>
+  </div>
+</div>
+</div>
+     </div>
+      <!-- main2 section end -->
+
+      <!-- main3 section start -->
+        <div class="main3 flex flex-col overflow-hidden items-center bg-[rgb(21,52,54)] mx-[2vw] w-[96%] h-[auto]">
+          <div data-aos="fade-down"
+          data-aos-duration="3000" class="mt-[140px] rounded-[80px] flex justify-center items-center mb-[40px] rou w-[160px] h-[160px] bg-white">
+              <img src="./Assets/webpage28.31.png" alt="">
+          </div>
+          <h1 data-aos="fade-right"
+      data-aos-offset="300"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-sine" class="text-[35px] sm:text-[45px] md:text-[55px] lg:text-[60px] text-[rgb(255,255,255)] text-center" style="font-family: Red Rose, serif; font-weight: 600;">Figma File Included
+        </h1>
+      <p data-aos="fade-left"
+      data-aos-offset="300"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-sine" class="text-[18px] mx-[26%] text-[rgb(173,188,189)] text-center" style="font-family: Open Sans, serif; font-weight: 400;">To give you 100% control over the design, together with the Webflow project, you also will get the Figma file. After the purchase, simply send us an email to flowzaiofficial@gmail.com and we will be happy to forward you the Figma file.
+    </p>     
+      <div class="buttons flex flex-col items-center gap-[20px] sm:flex-row mt-[30px] mb-[30px]">
+        <div class="right  lg:flex w-[250px] h-[55px] overflow-hidden rounded-[10px] text-[white]" style="font-family: Red Rose, serif;" >
+          <div class="flex justify-center cursor-pointer flex- gap-[25px] text-[whit]  flex-col  bg-[rgb(85,148,73)] items-center h-[110px] w-[250px] hover:translate-y-[-50%] duration-[0.8S] ">
+          <h1 class="text-[20px]">Request Figma File</h1>
+          <h1 class="text-[20px]">Request Figma File</h1>
+        </div>
+        </div>
+        <div class="right  lg:flex w-[290px] h-[55px] overflow-hidden rounded-[10px] text-[black]" style="font-family: Red Rose, serif;" >
+          <div class="flex justify-center cursor-pointer flex- gap-[25px] text-[whit]  flex-col border-[1px] bg-[white] items-center h-[110px] w-[290px] hover:translate-y-[-50%] duration-[0.8S]">
+          <h1 class="text-[20px]">Purchase Template</h1>
+          <h1 class="text-[20px]">Purchase Template</h1>
+        </div>
+        </div>
+      </div>
+
+      <div class="w-[80%] mt-[150px]   rounded-ss-[20px] rounded-se-[20px] px-[3.5%] pb-0 pt-[3.5%] bg-[rgb(85,148,73)]">
+        <img src="./Assets/webpage28.32.png" class="w-[100%] h-[100%] rounded-ss-[15px] rounded-se-[15px]" style="object-fit: cover;">
+      </div>
+      </div>
+    </div>
+        
+      <!-- main3 section end -->
+
+      <!-- main4 section start -->
+      <div class="main4 w-[100%]  pt-[130px] mt-[170px] flex flex-col items-center h-[auto]" style="background-image: url(./Assets/webpage28.30.png);">
+          <div data-aos="fade-down"
+          data-aos-duration="3000" class="mb-[35px]">
+            <img src="./Assets/lodos.svg" >
+          </div>
+          <h1 data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-sine" class="text-[35px] sm:text-[45px] md:text-[55px] lg:text-[60px] text-[rgb(255,255,255)] text-center" style="font-family: Red Rose, serif; font-weight: 600;">Purchase Zaipart Today!
+            </h1>
+          <p data-aos="fade-left"
+          data-aos-offset="300"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-sine" class="text-[18px] mx-[26%] text-[rgb(173,188,189)] text-center" style="font-family: Open Sans, serif; font-weight: 400;">Zaipart webflow template includes 15+ pages in total, with more than 15+ sections, and 2 different home pages with amazing features.
+        </p>     
+          <div class="buttons flex flex-col items-center gap-[20px] sm:flex-row mt-[30px] mb-[30px]">
+            <div class="right  lg:flex w-[250px] h-[55px] overflow-hidden rounded-[10px] text-[white]" style="font-family: Red Rose, serif;" >
+              <div class="flex justify-center cursor-pointer flex- gap-[25px] text-[whit]  flex-col  bg-[rgb(85,148,73)] items-center h-[110px] w-[250px] hover:translate-y-[-50%] duration-[0.8S] ">
+              <h1 class="text-[20px]">Purchase Template</h1>
+              <h1 class="text-[20px]">Purchase Template</h1>
+            </div>
+            </div>
+            <div class="right  lg:flex w-[290px] h-[55px] overflow-hidden rounded-[10px] text-[black]" style="font-family: Red Rose, serif;" >
+              <div class="flex justify-center cursor-pointer flex- gap-[25px] text-[whit]  flex-col border-[1px] bg-[white] items-center h-[110px] w-[290px] hover:translate-y-[-50%] duration-[0.8S]">
+              <h1 class="text-[20px]">Explore More Templates</h1>
+              <h1 class="text-[20px]">Explore More Templates</h1>
+            </div>
+            </div>
+          </div>
+
+          <div class=" w-[90%] mt-[120px] h-[auto] border-t-[1px] flex justify-center">
+            <p class="text-[white] mt-[25px] mb-[25px] text-[18px]" style="font-family: Red Rose, serif;">© Copyright - <span class="text-[rgb(85,148,73)]">Zaipart</span>  | Designed by <span class="text-[rgb(85,148,73)]"> Flowzai </span>- <span class="text-[rgb(85,148,73)]">License</span>  Powered by <span class="text-[rgb(85,148,73)]">Webflow</span> </p>
+          </div>
+      </div>
+    <!-- main 4 section end -->
+
+
+</body>
+  <!-- data aos CDN -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <!-- data aos CDN -->
+</html>
